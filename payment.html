@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online-shop</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="online shop.html">Online Shop</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="terms and conditions.html">Terms and Conditions</a>
+    </ul>
+  </nav>
+</header>
+<link rel="stylesheet" href="./style.css">
+
+<!-- Payment Methods -->
+<div class="payment-methods">
+    <h2>Payment Methods</h2>
+    <ul>
+      <li><a href="#bank-transfer" class="payment-method">Bank Transfer</a></li>
+      <li><a href="#card-payment" class="payment-method">Credit/Debit Card</a></li>
+      <li><a href="#paypal-payment" class="payment-method">PayPal</a></li>
+    </ul>
+    
+    <!-- Bank Transfer Details -->
+    <div id="bank-transfer" class="payment-details">
+      <h3>Bank Transfer Details</h3>
+      <h3>Dollar Account Details</h3>
+      <p>Account Name: The Hair Spot By Hadiza</p>
+      <p>Account Number: 9030512472</p>
+      <p>Bank Name: Moniepoint Microfinance Bank</p>
+
+    <!-- Naira Bank Transfer Details -->
+      <h3> Naira Account Details</h3>
+      <p>Account Name: The Hair Spot By Hadiza</p>
+      <p>Account Number: 9030512472</p>
+      <p>Bank Name: Opay Microfinance Bank</p>
+    </div>
+    
+    <!-- Card Payment Details -->
+    <div id="card-payment" class="payment-details">
+      <h3>Card Payment Details</h3>
+      <form>
+        <label for="card-type">Card Type:</label>
+        <select id="card-type" name="card-type">
+          <option value="mastercard">Mastercard</option>
+          <option value="visa">Visa</option>
+          <option value="verve">Verve</option>
+        </select><br><br>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card-number"><br><br>
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date"><br><br>
+        <label for="security-code">Security Code:</label>
+        <input type="text" id="security-code" name="security-code"><br><br>
+        <input type="submit" value="Pay Now">
+      </form>
+    </div>
+    
+    <!-- PayPal Payment Details -->
+    <div id="paypal-payment" class="payment-details">
+      <h3>PayPal Payment Details</h3>
+      <p>Please click the PayPal button to proceed with payment.</p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="your_paypal_email">
+        <input type="hidden" name="item_name" value="Your Item Name">
+        <input type="hidden" name="amount" value="Your Item Price">
+        <input type="submit" value="Pay with PayPal">
+      </form>
+    </div>
+  </div>
+
+  
+
+
+  
+
+<script>
+const paymentMethods = document.querySelectorAll('.payment-method');
+const paymentDetails = document.querySelectorAll('.payment-details');
+
+paymentMethods.forEach((method) => {
+  method.addEventListener('click', (e) => {
+    e.preventDefault();
+    const targetId = method.getAttribute('href');
+    const targetDetails = document.querySelector(targetId);
+    paymentDetails.forEach((details) => {
+      details.style.display = 'none';
+    });
+    targetDetails.style.display = 'block';
+  });
+});
+</script>
+
+  

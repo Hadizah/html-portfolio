@@ -1,0 +1,343 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #90129750;
+  color: #092a5b;
+  padding: 1em;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.slideshow {
+  position: relative;
+  width: 90%;
+  margin: 100px auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+#previous-button, #next-button {
+  position: absolute;
+  top: 270px;
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#previous-button {
+  left: 20px;
+}
+
+#next-button {
+  right: 20px;
+}
+
+
+/* Online shop */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 195vh;
+}
+
+footer {
+  width: 100%;
+  height: 5vh;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1opx;
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: #1d52e6;
+  padding: 20px;
+  border: 1px solid #0b0101;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+
+
+
+/* Contact Form Styles */
+
+.contact-form {
+  max-width: 100px; /* Reduced from 500px */
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #e4dae4;
+  border: 1px solid #12030e;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 01px;
+}
+
+.contact-form input[type="text"], .contact-form input[type="email"] {
+  width: 20%;
+  height: 10px; /* Reduced from 50px */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #150412;
+}
+
+.contact-form textarea {
+  width: 20%;
+  height: 50px; /* Reduced from 100px */
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #160615;
+}
+
+.contact-form input[type="submit"] {
+  width: 20%;
+  height: 10px; /* Reduced from 50px */
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+
+
+/* Payment Methods Styles */
+
+.payment-methods {
+  margin-bottom: 20px;
+}
+
+.payment-methods ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.payment-methods li {
+  padding: 10px;
+  border-bottom: 1px solid #2d0527;
+}
+
+.payment-methods li:last-child {
+  border-bottom: none;
+}
+
+.payment-method {
+  text-decoration: none;
+  color: #2b0423;
+}
+
+.payment-method:hover {
+  color: #27051b;
+}
+
+.payment-method:active, .payment-method:focus {
+  background-color: #ebe3ea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.payment-details {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ece6ec;
+  border: 1px solid #0e020a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details h3 {
+  margin-top: 0;
+}
+
+.credit-debit-card {
+  background-color: #efe1ee;
+  border: 1px solid #10020b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.credit-debit-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.credit-debit-card .card-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.credit-debit-card .card-expiry {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+/* Terms and Conditions */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e161d;
+    color: #e8e2e7;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+section {
+    background-color: #f1e8ed;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+
+
+/* style.css */
+
+.wigs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wig-card {
+  margin: 20px;
+  width: 200px;
+  text-align: left;
+}
+
+.wig-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cart-summary {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f4e5f2;
+  padding: 20px;
+  border: 1px solid #15040d;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.product-grid { 
+  display: grid; 
+  grid-template-columns: repeat(5, 5fr); 
+  gap: 20px; 
+  padding: 20px; 
+}
+
+.product { 
+  background-color: #f3ecf1; 
+  padding: 20px; 
+  border: 1px solid #1c051a; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.product img { 
+  width: 100%; 
+  height: 150px; 
+  object-fit: contain; 
+  border-radius: 10px 10px 0 0; 
+}
+
+
+

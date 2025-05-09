@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" href="./style.css"
+</head>
+</body>
+  <header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="online shop.html">Online Shop</a></li>
+      <a href="shop.php.html">Shop</a>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="payment.html">Payment</a></li>
+      <li><a href="terms and conditions.html">Terms and Conditions</a>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section id="home">
+      <div class="slideshow">
+        <div class="slide active">
+          <img src="https://scontent.flos5-1.fna.fbcdn.net/v/t39.30808-6/404300076_1520496092033560_819502425339746016_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE61vvnmYtZ9abocEH6MAOpj4y1hm56Sx-PjLWGbnpLH-SqKEAFHh-m28SXp32ZPpoOF4eNtpsW5HmjnHGoCoy1&_nc_ohc=m1b96ro0XxAQ7kNvgFOnOS8&_nc_zt=23&_nc_ht=scontent.flos5-1.fna&_nc_gid=Ahv0pyVbIBEbxhTJCU3-jAs&oh=00_AYB413SM_FJgyj5xgZXdBdMnuez8LbnGqG5V1hjCOvqsMQ&oe=678EFC9F" alt="Hadiza Usman">
+          <h2>Meet Hadiza Usman</h2>
+          <p><h3>Aspiring Tech Sis & Beautician | Computer Science Undergrad | Cybersecurity Enthusiast | Entrepreneur-at-Heart</h3></p>
+          <p>My Story: I'm Hadiza, a 200-level Computer Science student at the University of Ibadan. Born in the mid-2000s, I grew up in Maryland, Lagos, with a passion for learning and exploration. Despite facing challenges, I have remained driven and focused on my goals.</p>
+        </div>
+        <div class="slide">
+          <img src="https://scontent.flos5-3.fna.fbcdn.net/v/t39.30808-6/468128007_1755888748494292_9038096752025996287_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHL0iojkZUkmaknD-NQeTrCfYGcgY_3xP59gZyBj_fE_uqjyblUp2YwHiBe8TR6DiLwwLXM8Ze6cKowXFXuuk6o&_nc_ohc=yqSfGipuauUQ7kNvgFLOuFe&_nc_zt=23&_nc_ht=scontent.flos5-3.fna&_nc_gid=A8KFP-V6RvlKt5WJ45pbnuz&oh=00_AYBzfr-fWtEbG1QNfL0Po7WFdcKQ8LE89KKTZBGrwRxXZg&oe=678EE26A" alt="Passions">
+          <h2>My Passions & My Mantra</h2>
+          <p>I am fascinated by the world of tech, particularly cybersecurity. I believe that with determination and hard work, I can make a meaningful impact in this field. Beyond tech, I'm also passionate about beauty and entrepreneurship, always seeking innovative ways to merge these interests.</p>
+          <p>My Mantra: I live by three guiding principles: 'Every accomplishment begins with the decision to try.' 'Work hard until your idols become your rivals.' 'Forget the mistake and remember the lesson.'</p>
+          <p>As I navigate my journey, I am reminded that "man envisions but God makes it happen." I am grateful for the opportunities in my life, and I acknowledge the role of divine guidance and provision. GRACE!</p>
+        </div>
+        <div class="slide">
+          <img src="https://scontent.flos1-1.fna.fbcdn.net/v/t39.30808-6/468091210_1755888751827625_5407325535177142346_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHFuJA2F2KL6OzC-CBkjWH7qZGaENKhopapkZoQ0qGiljFCB0foe7JyBOuX4T_X23I3NaCAhKts2kAMX_TQlaBw&_nc_ohc=vP7_u4HJcukQ7kNvgGhmy09&_nc_zt=23&_nc_ht=scontent.flos1-1.fna&_nc_gid=A2mO6ia87FtuOK-z-O_6Hlp&oh=00_AYC73CyyYwdqmAYvGhU6Bv6vZxw7TTr59LXWeDBTE4n8Eg&oe=679231FB" alt="Goals">
+          <h2>What Drives Me & Beyond Coding</h2>
+          <p>I am motivated by the desire to create something meaningful, to innovate, and to inspire others. I believe that success is not just about achieving my goals but also about staying true to myself and my values.</p>
+          <p>Beyond Coding: When I'm not immersed in code, you can find me watching Nollywood movies, researching skincare products and wigs, or strategizing my next big goal. I am always looking for ways to grow, learn, and explore new opportunities.</p>
+          <p><Bold><h4>Walk with me on this journey!</h4></Bold></p>
+        </div>
+        <!-- Navigation buttons -->
+        <button id="previous-button">Previous</button>
+        <button id="next-button">Next</button>
+      </div>
+    </section>
+  </main>
+      <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+      
+        
+        function showPreviousSlide() {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+          slides[currentSlide].classList.add('active');
+        }
+
+        function showNextSlide() {
+          slides[currentSlide].classList.remove('active');
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].classList.add('active');
+        }
+        // Add event listeners for navigation buttons
+        document.getElementById('previous-button').addEventListener('click', showPreviousSlide);
+        document.getElementById('next-button').addEventListener('click', showNextSlide);
+        
+        // Show the first slide
+        slides[0].classList.add('active');
+      </script>
+      <script src="./script.js">
+      </script>
+    </section>
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
